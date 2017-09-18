@@ -6,14 +6,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Fish web application
- * 
+ * Web startup
  *
  * <p>
- * 
- * @author huanghuapeng 2017年9月18日
- * @see
- * @since 1.0
+ *
+ * @author 3306 2017年9月18日下午11:04:46
+ *
  */
 @SpringBootApplication
 public class WebApp {
