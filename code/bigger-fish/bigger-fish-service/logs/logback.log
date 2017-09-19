@@ -1,0 +1,59 @@
+2017-09-19 22:14:04 [main] INFO  com.service.ServiceApp - The following profiles are active: dev
+2017-09-19 22:14:07 [main] INFO  o.a.c.core.StandardService - Starting service Tomcat
+2017-09-19 22:14:07 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-09-19 22:14:07 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-09-19 22:14:10 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2017-09-19 22:14:10 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-09-19 22:14:10 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2017-09-19 22:14:10 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-09-19 22:14:12 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2017-09-19 22:14:12 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2017-09-19 22:14:12 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2017-09-19 22:14:12 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2017-09-19 22:14:12 [main] INFO  c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-09-19 22:14:13 [main] INFO  c.n.discovery.DiscoveryClient - Disable delta property : false
+2017-09-19 22:14:13 [main] INFO  c.n.discovery.DiscoveryClient - Single vip registry refresh property : null
+2017-09-19 22:14:13 [main] INFO  c.n.discovery.DiscoveryClient - Force full registry fetch : false
+2017-09-19 22:14:13 [main] INFO  c.n.discovery.DiscoveryClient - Application is null : false
+2017-09-19 22:14:13 [main] INFO  c.n.discovery.DiscoveryClient - Registered Applications size is zero : true
+2017-09-19 22:14:13 [main] INFO  c.n.discovery.DiscoveryClient - Application version is -1: true
+2017-09-19 22:14:13 [main] INFO  c.n.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2017-09-19 22:14:13 [main] INFO  c.n.discovery.DiscoveryClient - The response status is 200
+2017-09-19 22:14:13 [main] INFO  c.n.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 1
+2017-09-19 22:14:13 [main] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2017-09-19 22:14:13 [main] INFO  c.n.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1505830453363 with initial instances count: 1
+2017-09-19 22:14:13 [main] INFO  c.n.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1505830453423, current=UP, previous=STARTING]
+2017-09-19 22:14:13 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.discovery.DiscoveryClient - DiscoveryClient_FISH-SERVICE/localhost:Fish-service:9879: registering service...
+2017-09-19 22:14:13 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.discovery.DiscoveryClient - DiscoveryClient_FISH-SERVICE/localhost:Fish-service:9879 - registration status: 204
+2017-09-19 22:14:13 [main] INFO  com.service.ServiceApp - Started ServiceApp in 15.048 seconds (JVM running for 16.011)
+2017-09-19 22:14:13 [main] INFO  com.service.ServiceApp - Start ServerApp success
+2017-09-19 22:16:32 [http-nio-9879-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-19 22:18:44 [main] INFO  com.service.ServiceApp - The following profiles are active: dev
+2017-09-19 22:18:47 [main] INFO  o.a.c.core.StandardService - Starting service Tomcat
+2017-09-19 22:18:47 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-09-19 22:18:48 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-09-19 22:18:53 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2017-09-19 22:18:53 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-09-19 22:18:53 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2017-09-19 22:18:53 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-09-19 22:18:54 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2017-09-19 22:18:54 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2017-09-19 22:18:55 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2017-09-19 22:18:55 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2017-09-19 22:18:55 [main] INFO  c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-09-19 22:18:55 [main] INFO  c.n.discovery.DiscoveryClient - Disable delta property : false
+2017-09-19 22:18:55 [main] INFO  c.n.discovery.DiscoveryClient - Single vip registry refresh property : null
+2017-09-19 22:18:55 [main] INFO  c.n.discovery.DiscoveryClient - Force full registry fetch : false
+2017-09-19 22:18:55 [main] INFO  c.n.discovery.DiscoveryClient - Application is null : false
+2017-09-19 22:18:55 [main] INFO  c.n.discovery.DiscoveryClient - Registered Applications size is zero : true
+2017-09-19 22:18:55 [main] INFO  c.n.discovery.DiscoveryClient - Application version is -1: true
+2017-09-19 22:18:55 [main] INFO  c.n.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2017-09-19 22:18:56 [main] INFO  c.n.discovery.DiscoveryClient - The response status is 200
+2017-09-19 22:18:56 [main] INFO  c.n.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 1
+2017-09-19 22:18:56 [main] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2017-09-19 22:18:56 [main] INFO  c.n.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1505830736309 with initial instances count: 2
+2017-09-19 22:18:56 [main] INFO  c.n.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1505830736374, current=UP, previous=STARTING]
+2017-09-19 22:18:56 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.discovery.DiscoveryClient - DiscoveryClient_FISH-SERVICE/192.168.19.1:9879: registering service...
+2017-09-19 22:18:56 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.discovery.DiscoveryClient - DiscoveryClient_FISH-SERVICE/192.168.19.1:9879 - registration status: 204
+2017-09-19 22:18:56 [main] INFO  com.service.ServiceApp - Started ServiceApp in 18.498 seconds (JVM running for 19.459)
+2017-09-19 22:18:56 [main] INFO  com.service.ServiceApp - Start ServerApp success

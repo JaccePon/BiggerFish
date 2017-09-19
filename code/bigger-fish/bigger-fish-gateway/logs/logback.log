@@ -1,0 +1,84 @@
+2017-09-19 22:08:19 [main] INFO  com.gateway.GatewayApp - The following profiles are active: dev
+2017-09-19 22:08:26 [main] INFO  o.a.c.core.StandardService - Starting service Tomcat
+2017-09-19 22:08:26 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-09-19 22:08:26 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-09-19 22:08:29 [localhost-startStop-1] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2017-09-19 22:08:29 [localhost-startStop-1] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-09-19 22:08:29 [localhost-startStop-1] INFO  c.n.c.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1f328744
+2017-09-19 22:08:36 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2017-09-19 22:08:36 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-09-19 22:08:38 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2017-09-19 22:08:38 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2017-09-19 22:08:38 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2017-09-19 22:08:38 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2017-09-19 22:08:39 [main] INFO  c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-09-19 22:08:39 [main] INFO  c.n.discovery.DiscoveryClient - Disable delta property : false
+2017-09-19 22:08:39 [main] INFO  c.n.discovery.DiscoveryClient - Single vip registry refresh property : null
+2017-09-19 22:08:39 [main] INFO  c.n.discovery.DiscoveryClient - Force full registry fetch : false
+2017-09-19 22:08:39 [main] INFO  c.n.discovery.DiscoveryClient - Application is null : false
+2017-09-19 22:08:39 [main] INFO  c.n.discovery.DiscoveryClient - Registered Applications size is zero : true
+2017-09-19 22:08:39 [main] INFO  c.n.discovery.DiscoveryClient - Application version is -1: true
+2017-09-19 22:08:39 [main] INFO  c.n.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2017-09-19 22:08:39 [main] INFO  c.n.discovery.DiscoveryClient - The response status is 200
+2017-09-19 22:08:39 [main] INFO  c.n.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 1
+2017-09-19 22:08:39 [main] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2017-09-19 22:08:39 [main] INFO  c.n.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1505830119618 with initial instances count: 0
+2017-09-19 22:08:39 [main] INFO  c.n.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1505830119768, current=UP, previous=STARTING]
+2017-09-19 22:08:39 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.discovery.DiscoveryClient - DiscoveryClient_IRS-GATEWAY/localhost:Irs-gateway:9090: registering service...
+2017-09-19 22:08:40 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.discovery.DiscoveryClient - DiscoveryClient_IRS-GATEWAY/localhost:Irs-gateway:9090 - registration status: 204
+2017-09-19 22:08:40 [main] INFO  com.gateway.GatewayApp - Started GatewayApp in 27.986 seconds (JVM running for 29.047)
+2017-09-19 22:08:40 [main] INFO  com.gateway.GatewayApp - Start gateway app success 
+2017-09-19 22:09:09 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.n.discovery.DiscoveryClient - Disable delta property : false
+2017-09-19 22:09:09 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.n.discovery.DiscoveryClient - Single vip registry refresh property : null
+2017-09-19 22:09:09 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.n.discovery.DiscoveryClient - Force full registry fetch : false
+2017-09-19 22:09:09 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.n.discovery.DiscoveryClient - Application is null : false
+2017-09-19 22:09:09 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.n.discovery.DiscoveryClient - Registered Applications size is zero : true
+2017-09-19 22:09:09 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.n.discovery.DiscoveryClient - Application version is -1: false
+2017-09-19 22:09:09 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.n.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2017-09-19 22:09:09 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.n.discovery.DiscoveryClient - The response status is 200
+2017-09-19 22:13:00 [main] INFO  com.gateway.GatewayApp - The following profiles are active: dev
+2017-09-19 22:13:04 [main] INFO  o.a.c.core.StandardService - Starting service Tomcat
+2017-09-19 22:13:04 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-09-19 22:13:04 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-09-19 22:13:39 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-09-19 22:15:16 [main] INFO  com.gateway.GatewayApp - The following profiles are active: dev
+2017-09-19 22:15:20 [main] INFO  o.a.c.core.StandardService - Starting service Tomcat
+2017-09-19 22:15:20 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-09-19 22:15:20 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-09-19 22:15:24 [localhost-startStop-1] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2017-09-19 22:15:24 [localhost-startStop-1] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-09-19 22:15:24 [localhost-startStop-1] INFO  c.n.c.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1ec76949
+2017-09-19 22:15:31 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2017-09-19 22:15:31 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-09-19 22:15:33 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2017-09-19 22:15:33 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2017-09-19 22:15:34 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2017-09-19 22:15:34 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2017-09-19 22:15:34 [main] INFO  c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-09-19 22:15:34 [main] INFO  c.n.discovery.DiscoveryClient - Disable delta property : false
+2017-09-19 22:15:34 [main] INFO  c.n.discovery.DiscoveryClient - Single vip registry refresh property : null
+2017-09-19 22:15:34 [main] INFO  c.n.discovery.DiscoveryClient - Force full registry fetch : false
+2017-09-19 22:15:34 [main] INFO  c.n.discovery.DiscoveryClient - Application is null : false
+2017-09-19 22:15:34 [main] INFO  c.n.discovery.DiscoveryClient - Registered Applications size is zero : true
+2017-09-19 22:15:34 [main] INFO  c.n.discovery.DiscoveryClient - Application version is -1: true
+2017-09-19 22:15:34 [main] INFO  c.n.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2017-09-19 22:15:35 [main] INFO  c.n.discovery.DiscoveryClient - The response status is 200
+2017-09-19 22:15:35 [main] INFO  c.n.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 1
+2017-09-19 22:15:35 [main] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2017-09-19 22:15:35 [main] INFO  c.n.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1505830535318 with initial instances count: 1
+2017-09-19 22:15:35 [main] INFO  c.n.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1505830535490, current=UP, previous=STARTING]
+2017-09-19 22:15:35 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.discovery.DiscoveryClient - DiscoveryClient_IRS-GATEWAY/localhost:Irs-gateway:9090: registering service...
+2017-09-19 22:15:35 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.discovery.DiscoveryClient - DiscoveryClient_IRS-GATEWAY/localhost:Irs-gateway:9090 - registration status: 204
+2017-09-19 22:15:35 [main] INFO  com.gateway.GatewayApp - Started GatewayApp in 25.826 seconds (JVM running for 26.876)
+2017-09-19 22:15:35 [main] INFO  com.gateway.GatewayApp - Start gateway app success 
+2017-09-19 22:16:31 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-19 22:16:31 [http-nio-9090-exec-1] INFO  c.n.c.ChainedDynamicProperty - Flipping property: FISH-SERVICE.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2017-09-19 22:16:31 [http-nio-9090-exec-1] INFO  c.n.u.c.ShutdownEnabledTimer - Shutdown hook installed for: NFLoadBalancer-PingTimer-FISH-SERVICE
+2017-09-19 22:16:32 [http-nio-9090-exec-1] INFO  c.n.l.BaseLoadBalancer - Client:FISH-SERVICE instantiated a LoadBalancer:DynamicServerListLoadBalancer:{NFLoadBalancer:name=FISH-SERVICE,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2017-09-19 22:16:32 [http-nio-9090-exec-1] INFO  c.n.l.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+2017-09-19 22:16:32 [http-nio-9090-exec-1] INFO  c.n.c.ChainedDynamicProperty - Flipping property: FISH-SERVICE.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2017-09-19 22:16:32 [http-nio-9090-exec-1] INFO  c.n.l.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client FISH-SERVICE initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=FISH-SERVICE,current list of Servers=[localhost:9879],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:localhost:9879;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@5ebf9464
+2017-09-19 22:16:33 [PollingServerListUpdater-0] INFO  c.n.c.ChainedDynamicProperty - Flipping property: FISH-SERVICE.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2017-09-19 22:20:34 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration

@@ -1,0 +1,52 @@
+2017-09-19 22:02:23 [main] INFO  com.reg.RegApp - The following profiles are active: dev
+2017-09-19 22:02:27 [main] INFO  o.a.c.core.StandardService - Starting service Tomcat
+2017-09-19 22:02:27 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-09-19 22:02:27 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-09-19 22:02:29 [localhost-startStop-1] INFO  c.s.j.s.i.a.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2017-09-19 22:02:30 [localhost-startStop-1] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2017-09-19 22:02:30 [localhost-startStop-1] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2017-09-19 22:02:33 [localhost-startStop-1] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2017-09-19 22:02:33 [localhost-startStop-1] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2017-09-19 22:02:37 [main] INFO  c.n.discovery.DiscoveryClient - Client configured to neither register nor query for data.
+2017-09-19 22:02:38 [main] INFO  c.n.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1505829758014 with initial instances count: 0
+2017-09-19 22:02:38 [main] INFO  c.n.e.DefaultEurekaServerContext - Initializing ...
+2017-09-19 22:02:38 [main] INFO  c.n.e.cluster.PeerEurekaNodes - Adding new peer nodes [http://127.0.0.1:12345/eureka/]
+2017-09-19 22:02:38 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2017-09-19 22:02:38 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2017-09-19 22:02:38 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2017-09-19 22:02:38 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2017-09-19 22:02:38 [main] INFO  c.n.e.cluster.PeerEurekaNodes - Replica node URL:  http://127.0.0.1:12345/eureka/
+2017-09-19 22:02:38 [main] INFO  c.n.e.DefaultEurekaServerContext - Initialized
+2017-09-19 22:02:41 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2017-09-19 22:02:41 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-09-19 22:02:41 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2017-09-19 22:02:41 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-09-19 22:02:43 [main] INFO  com.reg.RegApp - Started RegApp in 26.096 seconds (JVM running for 27.686)
+2017-09-19 22:02:43 [main] INFO  com.reg.RegApp - Start RegCenter App success
+2017-09-19 22:02:45 [http-nio-12345-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-19 22:07:50 [main] INFO  com.reg.RegApp - The following profiles are active: dev
+2017-09-19 22:07:53 [main] INFO  o.a.c.core.StandardService - Starting service Tomcat
+2017-09-19 22:07:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-09-19 22:07:53 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-09-19 22:07:55 [localhost-startStop-1] INFO  c.s.j.s.i.a.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2017-09-19 22:07:55 [localhost-startStop-1] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2017-09-19 22:07:55 [localhost-startStop-1] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2017-09-19 22:07:55 [localhost-startStop-1] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2017-09-19 22:07:55 [localhost-startStop-1] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2017-09-19 22:07:58 [main] INFO  c.n.discovery.DiscoveryClient - Client configured to neither register nor query for data.
+2017-09-19 22:07:58 [main] INFO  c.n.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1505830078186 with initial instances count: 0
+2017-09-19 22:07:58 [main] INFO  c.n.e.DefaultEurekaServerContext - Initializing ...
+2017-09-19 22:07:58 [main] INFO  c.n.e.cluster.PeerEurekaNodes - Adding new peer nodes [http://127.0.0.1:12345/eureka/]
+2017-09-19 22:07:58 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2017-09-19 22:07:58 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2017-09-19 22:07:58 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2017-09-19 22:07:58 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2017-09-19 22:07:58 [main] INFO  c.n.e.cluster.PeerEurekaNodes - Replica node URL:  http://127.0.0.1:12345/eureka/
+2017-09-19 22:07:59 [main] INFO  c.n.e.DefaultEurekaServerContext - Initialized
+2017-09-19 22:08:01 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2017-09-19 22:08:01 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-09-19 22:08:01 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2017-09-19 22:08:01 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-09-19 22:08:02 [main] INFO  com.reg.RegApp - Started RegApp in 18.679 seconds (JVM running for 19.589)
+2017-09-19 22:08:02 [main] INFO  com.reg.RegApp - Start RegCenter App success
+2017-09-19 22:08:15 [http-nio-12345-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'

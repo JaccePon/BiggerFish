@@ -1,4 +1,12 @@
 code/bigger-fish/bigger-fish-web/target/**
 code/bigger-fish/bigger-fish-common/target/**
+code/bigger-fish/bigger-fish-reg/target/**
+code/bigger-fish/bigger-fish-gateway/target/**
+code/bigger-fish/bigger-fish-service/target/*
+
 code/bigger-fish/.classpath
 code/bigger-fish/bigger-fish-common/.classpath
+code/bigger-fish/bigger-fish-reg/.classpath
+code/bigger-fish/bigger-fish-gateway/.classpath
+code/bigger-fish/bigger-fish-service/.classpath
+
