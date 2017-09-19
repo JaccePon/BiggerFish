@@ -11,3 +11,19 @@ or  cs12110@163.com.
 	Welcome to join us, we can build the together.
 
 	May you enjoy your journey on java!
+
+
+	1. Start the spring cloud
+
+		reg center -> gateway ->service
+
+	Then you can using your web broswer to check your spring cloud
+
+		http://127.0.0.1:12345
+
+	The using  the service 
+		
+		http://127.0.0.1:9090/api-a/hello?hello=fish
+
+
+

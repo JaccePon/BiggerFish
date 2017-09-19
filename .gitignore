@@ -10,3 +10,6 @@ code/bigger-fish/bigger-fish-reg/.classpath
 code/bigger-fish/bigger-fish-gateway/.classpath
 code/bigger-fish/bigger-fish-service/.classpath
 
+
+*.log
+
