@@ -5,12 +5,24 @@ import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fish.util.JSONUtil;
 
+/**
+ * 测试跨域请求
+ *
+ * <p>
+ *
+ * <code>@CrossOrigin</code>设置整一个RestController的服务允许跨域请求, 也可以注解在方法上
+ * 
+ * 
+ * @author 3306 2017年9月21日下午8:53:16
+ *
+ */
 @RestController
 @RequestMapping("/ajax")
 public class AjaxService {
@@ -35,7 +47,7 @@ public class AjaxService {
 		map.put("leader", "JaccePon");
 		map.put("dev", "3306");
 
-		return JSONUtil.buildCallbackJSONStr(map);
+		return JSONUtil.toJSONStr(map);
 	}
 
 }
