@@ -2,7 +2,10 @@
  * 解决跨域请求问题
  */
 function fetchJSONMap() {
-	fetchUp();
+	// fetchUp();
+	byGet();
+	byPut();
+	byPost();
 }
 
 
@@ -43,7 +46,7 @@ function callback(data) {
  * @returns
  */
 function fetchUp(){
-	var url="http://127.0.0.1:9879/ajax/jsonMap";
+	var url="http://127.0.0.1:9879/getAjax/123";
 	var formData = new FormData();  
 	formData.append("param","admin");  
 	  
@@ -57,4 +60,72 @@ function fetchUp(){
 	}).catch((error) => {  
 		console.log(error);  
 	});  
+}
+
+
+
+/**
+ * 测试Get接口
+ * 
+ * @returns
+ */
+function byGet(){
+	var url="http://127.0.0.1:9879/ajax/getAjax/123";
+	fetch(url , {  
+		 method: 'GET'  
+	}).then((response) => response.json() 
+	).then((json) => {  
+		alert(JSON.stringify(json));  
+	}).catch((error) => {  
+		console.log(error);  
+	});
+}
+
+
+
+/**
+ * 测试Put接口
+ * 
+ * @returns
+ */
+function byPut(){
+	var url="http://127.0.0.1:9879/ajax/addAjax";
+	var fd = new FormData();
+	fd.append("_method","PUT");
+	fd.append("name","白日梦想家");
+	fd.append("date","2010");
+	fd.append("score","8.9");
+	
+	fetch(url , {  
+		 method: 'PUT',
+		 body : fd
+	}).then((response) => response.json() 
+	).then((json) => {  
+		alert(JSON.stringify(json));  
+	}).catch((error) => {  
+		console.log(error);  
+	});
+}
+
+/**
+ * 测试Put接口
+ * 
+ * @returns
+ */
+function byPost(){
+	var url="http://127.0.0.1:9879/ajax/postAjax";
+	var fd = new FormData();
+	fd.append("name","白日梦想家");
+	fd.append("date","2010");
+	fd.append("score","8.9");
+	
+	fetch(url , {  
+		 method: 'POST',
+		 body: fd
+	}).then((response) => response.json() 
+	).then((json) => {  
+		alert(JSON.stringify(json));  
+	}).catch((error) => {  
+		console.log(error);  
+	});
 }
