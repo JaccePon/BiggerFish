@@ -2,18 +2,43 @@
 <html>
 <head>
 <meta charset="UTF-8" />
-<title>Insert title here</title>
-
-<link type="text/css" href="/plugin/bootstrap/css/bootstrap.css"></link>
+<title>Whale</title>
+<link rel="stylesheet" type="text/css"
+	href="/plugin/bootstrap/css/bootstrap.min.css"></link>
+<link rel="stylesheet" type="text/css" href="/css/index.css"></link>
 </head>
-<body>This is web home
+<body>
 
-<input type="button" onclick="fetchJSONMap()"></input>
+	<div class='whale-body'>
+		<div class='whale-head'>
+			<div class='pro-logo'>
+				<span>Whale</span>
+			</div>
+			<div class='pro-navs'>
+				<ul class="nav nav-tabs">
+					<li><a>Movie</a></li>
+					<li><a>Music</a></li>
+					<li><a>Blogs</a></li>
+					<li><a>4U</a></li>
+				</ul>
+			</div>
+
+			<div class='pro-search'>
+				<input type="text" name="key" placeholder="Input your keyword :)" />
+				<button class="btn deafult-btn">Go</button>
+			</div>
+
+		</div>
+		<div class='whale-body'></div>
+		<div class='whale-bottom'></div>
+	</div>
+
+
+	<!-- 	<button type="button" class="btn btn-default" onclick="fetchJSONMap()">Test fetch</button> -->
 </body>
-
 <script src="/js/jq/jquery-3.2.1.js"></script>
+<script src="/plugin/bootstrap/js/bootstrap.min.js"></script>
 <script src="/js/react/react.js"></script>
 <script src="/js/react/react-dom.js"></script>
-<script src="/plugin/bootstrap/js/bootstrap.min.js"></script>
 <script src="/js/sys/user/user.js"></script>
 </html>

@@ -1,0 +1,52 @@
+.whale-head {
+	width: 100%;
+	height: 80px;
+}
+
+.pro-logo, .pro-search {
+	width: 16%;
+	float: left;
+	border-bottom: 1px solid #ddd;
+	height: 90%;
+	margin-top: 1%;
+}
+
+.pro-search {
+	width: 24%;
+}
+
+.pro-navs {
+	width: 60%;
+	height: 90%;
+	margin-top: 1%;
+	float: left;
+}
+
+.pro-navs ul {
+	height: 100%;
+}
+
+.pro-navs ul li {
+	width: 25%;
+	font-size: 15px;
+}
+
+.nav-tabs>li>a:hover, .nav-tabs>li>a:focus {
+	border-color: #fff;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+	text-decoration: none;
+	background-color: #fff;
+	color: #278AEA;
+}
+
+.pro-search  input {
+	margin-top: 3%;
+	height: 30px;
+}
+
+.pro-search button {
+	height: 40px;
+	width: 20%;
+}

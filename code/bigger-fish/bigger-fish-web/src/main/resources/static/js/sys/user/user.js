@@ -91,7 +91,6 @@ function byGet(){
 function byPut(){
 	var url="http://127.0.0.1:9879/ajax/addAjax";
 	var fd = new FormData();
-	fd.append("_method","PUT");
 	fd.append("name","白日梦想家");
 	fd.append("date","2010");
 	fd.append("score","8.9");
