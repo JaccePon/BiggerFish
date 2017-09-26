@@ -19,7 +19,7 @@ import java.util.Set;
  * @see
  * @since 1.0
  */
-public class FishToolUtil {
+public class FishUtil {
 
 	/**
 	 * 判断字符串是否不为空
