@@ -9,7 +9,6 @@ var websocketServerUrl = "ws://127.0.0.1:8800/websocket";
  * 日期格式: yyyy-MM-dd HH:mm:ss
  */
 function getFormatDate() {
-
 	var date = new Date();
 	var seperator1 = "-";
 	var seperator2 = ":";
@@ -35,6 +34,5 @@ function fixDate(num) {
 	if (num > 10) {
 		return num;
 	}
-
 	return "0" + num;
 }
