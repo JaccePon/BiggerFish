@@ -28,14 +28,35 @@ public class HomeCtrl {
 	 */
 	@RequestMapping("/")
 	public String index(ModelMap map) {
-		
+
 		List<String> devs = new ArrayList<String>();
 		devs.add("JaccePon");
 		devs.add("3306");
-		
+
 		map.put("list", devs);
-		
+
 		return "index";
+	}
+
+	/**
+	 * 跳转到系统主页
+	 * 
+	 * @return String
+	 */
+	@RequestMapping("/chat")
+	public String chat(ModelMap map) {
+		return "chat";
+	}
+	
+	
+	/**
+	 * 跳转到系统主页
+	 * 
+	 * @return String
+	 */
+	@RequestMapping("/chat2")
+	public String chat2(ModelMap map) {
+		return "chat2";
 	}
 
 }

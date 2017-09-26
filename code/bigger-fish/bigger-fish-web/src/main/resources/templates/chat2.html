@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>My WebSocket</title>
+</head>
+
+<body>
+	Welcome
+	<br /> from:
+	<input id="from" type="text" value="123" />
+
+	<br /> to:
+	<input id="to" type="text"  value="456"/>
+
+	<br /> msg:
+	<input id="text" type="text" />
+
+	<br />
+	<button onclick="send()">Send</button>
+	<button onclick="closeWebSocket()">Close</button>
+
+	<br />
+	<div id="message"></div>
+</body>
+<script type="text/javascript" src="/js/sys/websocket/websocket.js"></script>
+</html>
