@@ -1,4 +1,4 @@
-package com.web.sck;
+package com.web.socket;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,16 +17,43 @@ import org.springframework.stereotype.Controller;
 import com.fish.util.JSONUtil;
 import com.web.entity.ScoketMsg;
 
+/**
+ * websocket实现类
+ *
+ * <p>
+ *
+ * @author 3306 2017年9月26日下午9:41:31
+ *
+ */
 @ServerEndpoint(value = "/websocket")
 @Controller
 public class MyWebSocket {
 
+	/**
+	 * 日志对象
+	 */
 	private static Logger log = LoggerFactory.getLogger(MyWebSocket.class);
 
+	/**
+	 * 存放用户对应的session
+	 * 
+	 * <pre>
+	 *	key: 用户名称
+	 *
+	 *	value: MyWebSocket
+	 * </pre>
+	 *
+	 */
 	private static Map<String, MyWebSocket> storageMap = new HashMap<String, MyWebSocket>();
 
+	/**
+	 * 用户会话
+	 */
 	private Session session;
 
+	/**
+	 * 在线人数
+	 */
 	private static int onlineCount = 0;
 
 	/**
@@ -43,19 +70,20 @@ public class MyWebSocket {
 	}
 
 	/**
-	 * 接收到客户端信息时
+	 * 接收到客户端信息
 	 */
 	@OnMessage
 	public void onMsg(String message, Session session) {
 		try {
 			ScoketMsg msgEntity = JSONUtil.parse(ScoketMsg.class, message);
 			storageMap.put(msgEntity.getFrom(), this);
+			MyWebSocket destSocket = storageMap.get(msgEntity.getTo());
 
-			MyWebSocket targetSc = storageMap.get(msgEntity.getTo());
-
-			if (targetSc != null) {
-				targetSc.sendMsg(message);
+			if (destSocket != null) {
+				destSocket.sendMsg(message);
 			} else {
+				MyWebSocket originSocket = storageMap.get(msgEntity.getFrom());
+				originSocket.sendMsg("The " + msgEntity.getTo() + " is out server");
 				log.info("The " + msgEntity.getTo() + " is out of server");
 			}
 		} catch (Exception e) {

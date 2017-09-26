@@ -1,6 +1,7 @@
 package com.fish.util;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 
 /**
  * JSON工具类
@@ -43,6 +44,20 @@ public class JSONUtil {
 			return "";
 		}
 		return JSON.toJSONString(obj);
+	}
+
+	/**
+	 * 将json字符串转换成对象
+	 * 
+	 * @param clazz
+	 *            class of T
+	 * @param jsonStr
+	 *            json字符串
+	 * @return T
+	 */
+	public static <T> T parse(Class<T> clazz, String jsonStr) {
+		JSONObject tmp = JSON.parseObject(jsonStr);
+		return JSON.toJavaObject(tmp, clazz);
 	}
 
 }
