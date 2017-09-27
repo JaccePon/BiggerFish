@@ -83,12 +83,9 @@ public class MyWebSocket {
 			if (destSocket != null) {
 				destSocket.sendMsg(message);
 			} else {
-
-				msgEntity.setText(msgEntity.getTo() + "'s out of server");
-				msgEntity.setTo("Sys");
-				msgEntity.setFrom(msgEntity.getTo());
-
 				MyWebSocket originSocket = storageMap.get(msgEntity.getFrom());
+				msgEntity.setText(msgEntity.getTo() + "'s out of server");
+				msgEntity.setFrom("Admin");
 				originSocket.sendMsg(msgEntity.toString());
 			}
 		} catch (Exception e) {

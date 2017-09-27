@@ -55,11 +55,11 @@ window.onbeforeunload = function() {
 function setPostMsgHtml(msgEntity) {
 	var entity = JSON.parse(msgEntity);
 	var html = "<div class=\"panel panel-info from\">";
-	html += "<div class=\"panel-heading\">";
-	html += entity.from;
-	html += "&nbsp;&nbsp;";
-	html += entity.date;
-	html += "</div>";
+	// html += "<div class=\"panel-heading\">";
+	// html += entity.from;
+	// html += "&nbsp;&nbsp;";
+	// html += entity.date;
+	// html += "</div>";
 	html += "<div class=\"panel-body\">";
 	html += entity.text;
 	html += "</div>";
@@ -78,11 +78,11 @@ function setPostMsgHtml(msgEntity) {
 function setReceiveMsgHtml(msgEntity) {
 	var entity = JSON.parse(msgEntity);
 	var html = "<div class=\"panel  panel-success to\">";
-	html += "<div class=\"panel-heading\">";
-	html += entity.from;
-	html += "&nbsp;&nbsp;";
-	html += entity.date;
-	html += "</div>";
+	// html += "<div class=\"panel-heading\">";
+	// html += entity.from;
+	// html += "&nbsp;&nbsp;";
+	// html += entity.date;
+	// html += "</div>";
 	html += "<div class=\"panel-body\">";
 	html += entity.text;
 	html += "</div>";
