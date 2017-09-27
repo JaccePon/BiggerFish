@@ -2,26 +2,58 @@
 <html>
 <head>
 <title>My WebSocket</title>
+<link rel="stylesheet" type="text/css"
+	href="/plugin/bootstrap/css/bootstrap.min.css"></link>
+<link rel="stylesheet" type="text/css" href="/css/chitchat/chat.css"></link>
+
+
 </head>
 
 <body>
-	Welcome
-	<br /> from:
-	<input id="from" type="text" value="123" />
+	<!-- 按钮触发模态框 -->
+	<button class="btn btn-primary btn-lg" data-toggle="modal"
+		data-target="#myModal">开始演示模态框</button>
 
-	<br /> to:
-	<input id="to" type="text" value="456" />
+	<!-- 聊天界面 -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">Chitchat</h4>
+				</div>
 
-	<br /> msg:
-	<input id="text" type="text" />
+				<div class="modal-body">
+					<div class="input-group">
+						<span class="input-group-addon">@</span> <input type="text"
+							id="to" class="form-control" placeholder="Nice to meet you :')"
+							value="alice" />
+					</div>
 
-	<br />
-	<button onclick="send()">Send</button>
-	<button onclick="closeWebSocket()">Close</button>
+					<div class="chat-area"></div>
 
-	<br />
-	<div id="message"></div>
+					<div class="input-group">
+						<input id="text" type="text" class="form-control" /> <span
+							class="input-group-btn">
+							<button class="btn btn-default" type="button" onclick="send()">post</button>
+						</span>
+					</div>
+				</div>
+
+				<input id="from" type="hidden" value="3306" /> <br />
+			</div>
+		</div>
+	</div>
+
 </body>
+
+<script src="/js/jq/jquery-3.2.1.js"></script>
+<script src="/plugin/bootstrap/js/bootstrap.min.js"></script>
+<script src="/js/react/react.js"></script>
+<script src="/js/react/react-dom.js"></script>
+
 <script type="text/javascript" src="/js/sys/const.js"></script>
 <script type="text/javascript" src="/js/sys/websocket/websocket.js"></script>
 </html>

@@ -14,7 +14,7 @@
 	<button class="btn btn-primary btn-lg" data-toggle="modal"
 		data-target="#myModal">开始演示模态框</button>
 
-	<!-- 模态框（Modal） -->
+	<!-- 聊天界面 -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
 		aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
@@ -28,60 +28,21 @@
 				<div class="modal-body">
 					<div class="input-group">
 						<span class="input-group-addon">@</span> <input type="text"
-							class="form-control" placeholder="Nice to meet you :')" value="3306"/>
+							id="to" class="form-control" placeholder="Nice to meet you :')"
+							value="3306" />
 					</div>
 
-					<div class="chat-area">
-						<div class="panel panel-default from">
-							<div class="panel-heading">海燕 2019-09-00 11:11:11</div>
-							<div class="panel-body">的无核化的温和的hi无核化带我飞</div>
-						</div>
-
-
-						<div class="panel panel-default from">
-							<div class="panel-heading">海燕 2019-09-00 11:11:11</div>
-							<div class="panel-body">的无核化的温和的hi无核化带我飞</div>
-						</div>
-
-						<div class="panel panel-default to">
-							<div class="panel-heading">3306 2019-09-00 11:11:11</div>
-							<div class="panel-body">I still
-								remembehgggggggggggggggggggggggggggggggggggggggggggggggggggggggggr
-								you :")</div>
-						</div>
-
-						<div class="panel panel-default from">
-							<div class="panel-heading">海燕 2019-09-00 11:11:11</div>
-							<div class="panel-body">的无核化的温和的hi无核化带我飞</div>
-						</div>
-
-						<div class="panel panel-default to">
-							<div class="panel-heading">3306 2019-09-00 11:11:11</div>
-							<div class="panel-body">I still
-								remembehgggggggggggggggggggggggggggggggggggggggggggggggggggggggggr
-								you :")</div>
-						</div>
-					</div>
+					<div class="chat-area"></div>
 
 					<div class="input-group">
-						<input type="text" class="form-control" /> <span
+						<input id="text" type="text" class="form-control" /> <span
 							class="input-group-btn">
 							<button class="btn btn-default" type="button" onclick="send()">post</button>
 						</span>
 					</div>
-
-
 				</div>
 
-				<div id="message"></div>
-
-				<br /> from: <input id="from" type="text" value="456" /> <br />
-				to: <input id="to" type="text" value="123" /> <br /> msg: <input
-					id="text" type="text" /> <br />
-				<button onclick="send()">Send</button>
-				<button onclick="closeWebSocket()">Close</button>
-
-
+				<input id="from" type="hidden" value="alice" /> <br />
 			</div>
 		</div>
 	</div>

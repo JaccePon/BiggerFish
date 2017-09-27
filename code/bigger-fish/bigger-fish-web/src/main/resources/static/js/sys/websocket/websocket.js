@@ -29,7 +29,7 @@ websocket.onopen = function(event) {
  * 接收到消息的回调方法
  */
 websocket.onmessage = function(event) {
-	setMessageInnerHTML("Reply: " + event.data);
+	setReceiveMsgHtml(event.data);
 }
 
 /**
@@ -63,25 +63,78 @@ function setMessageInnerHTML(innerHTML) {
 }
 
 /**
+ * 设置显示发送消息
+ * 
+ * @param msgEntity
+ */
+function setPostMsgHtml(msgEntity) {
+	var entity = JSON.parse(msgEntity);
+	var html = "<div class=\"panel panel-info from\">";
+	html += "<div class=\"panel-heading\">";
+	html += entity.from;
+	html += "&nbsp;&nbsp;";
+	html += entity.date;
+	html += "</div>";
+	html += "<div class=\"panel-body\">";
+	html += entity.text;
+	html += "</div>";
+	html += "</div>";
+
+	$(".chat-area").append(html);
+}
+
+/**
+ * 显示接收信息
+ * 
+ * @param msgEntity
+ *            信息类
+ */
+function setReceiveMsgHtml(msgEntity) {
+	var entity = JSON.parse(msgEntity);
+	var html = "<div class=\"panel  panel-success to\">";
+	html += "<div class=\"panel-heading\">";
+	html += entity.from;
+	html += "&nbsp;&nbsp;";
+	html += entity.date;
+	html += "</div>";
+	html += "<div class=\"panel-body\">";
+	html += entity.text;
+	html += "</div>";
+	html += "</div>";
+
+	$(".chat-area").append(html);
+}
+
+/**
  * 关闭连接
  */
 function closeWebSocket() {
 	websocket.close();
 }
 
+document.onkeydown = function(event) {
+	var e = event || window.event || arguments.callee.caller.arguments[0];
+	if (e && e.keyCode == 13) { // enter 键
+		send();
+		$("#text").val("");
+	}
+};
+
 /**
  * 发送消息
  */
 function send() {
 	var msg = new Object();
-	msg.to = document.getElementById("to").value;
-	msg.from = document.getElementById("from").value;
-	msg.text = document.getElementById('text').value;
+	msg.to = $("#to").val();
+	msg.from = $("#from").val()
+	msg.text = $("#text").val()
 	msg.date = getFormatDate();
 
-	if (msg.text != '') {
-		setMessageInnerHTML("Req: " + msg.text);
+	if (msg.text == '') {
+		return;
 	}
+
+	setPostMsgHtml(JSON.stringify(msg));
 
 	// 将消息封装成json数据发送
 	websocket.send(JSON.stringify(msg));

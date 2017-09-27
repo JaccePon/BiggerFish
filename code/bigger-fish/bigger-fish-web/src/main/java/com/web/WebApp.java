@@ -16,7 +16,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class WebApp {
 
-	private static final Logger LOG = LoggerFactory.getLogger(WebApp.class);
+	private static final Logger log = LoggerFactory.getLogger(WebApp.class);
 
 	/**
 	 * 启动App
@@ -26,7 +26,7 @@ public class WebApp {
 	 */
 	public static void main(String[] args) {
 		SpringApplication.run(WebApp.class, args);
-		LOG.info("Start WebApp success");
+		log.info("Start WebApp success");
 	}
 
 }
