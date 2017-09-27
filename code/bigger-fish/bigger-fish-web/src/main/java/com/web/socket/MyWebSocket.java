@@ -126,7 +126,9 @@ public class MyWebSocket {
 	 */
 	private void sendMsg(String msg) {
 		try {
-			this.session.getBasicRemote().sendText(msg);
+			if (this.session.isOpen()) {
+				this.session.getBasicRemote().sendText(msg);
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

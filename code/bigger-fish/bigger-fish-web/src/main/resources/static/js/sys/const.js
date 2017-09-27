@@ -1,7 +1,7 @@
 /**
  * websocket调用地址
  */
-var websocketServerUrl = "ws://127.0.0.1:8800/websocket";
+var websocketServerUrl = "ws://10.10.2.73:9900/websocket";
 
 /**
  * 获取格式化的当前时间
