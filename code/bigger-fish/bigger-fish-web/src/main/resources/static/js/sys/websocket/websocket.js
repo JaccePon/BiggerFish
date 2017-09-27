@@ -13,7 +13,7 @@ if ('WebSocket' in window) {
  * 连接发生错误的回调方法
  */
 websocket.onerror = function() {
-	setMessageInnerHTML("error");
+	console.log("websocket error");
 };
 
 /**
@@ -48,21 +48,6 @@ window.onbeforeunload = function() {
 }
 
 /**
- * 将消息显示在网页上
- * 
- * @param innerHTML
- *            消息
- */
-function setMessageInnerHTML(innerHTML) {
-
-	if (null == innerHTML || '' == innerHTML.trim()) {
-		return;
-	}
-
-	document.getElementById('message').innerHTML += innerHTML + '<br/>';
-}
-
-/**
  * 设置显示发送消息
  * 
  * @param msgEntity
@@ -81,6 +66,7 @@ function setPostMsgHtml(msgEntity) {
 	html += "</div>";
 
 	$(".chat-area").append(html);
+	$(".chat-area")[0].scrollTop = $(".chat-area")[0].scrollHeight;
 }
 
 /**
@@ -103,6 +89,7 @@ function setReceiveMsgHtml(msgEntity) {
 	html += "</div>";
 
 	$(".chat-area").append(html);
+	$(".chat-area")[0].scrollTop = $(".chat-area")[0].scrollHeight;
 }
 
 /**
@@ -112,6 +99,9 @@ function closeWebSocket() {
 	websocket.close();
 }
 
+/**
+ * 键盘Enter
+ */
 document.onkeydown = function(event) {
 	var e = event || window.event || arguments.callee.caller.arguments[0];
 	if (e && e.keyCode == 13) { // enter 键
@@ -133,9 +123,7 @@ function send() {
 	if (msg.text == '') {
 		return;
 	}
-
 	setPostMsgHtml(JSON.stringify(msg));
-
 	// 将消息封装成json数据发送
 	websocket.send(JSON.stringify(msg));
 }

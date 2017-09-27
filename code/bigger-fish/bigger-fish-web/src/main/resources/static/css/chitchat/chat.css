@@ -26,3 +26,11 @@
 .to {
 	float: left;
 }
+
+.panel-heading {
+	padding: 0px 5px;
+}
+
+.panel-body {
+	padding: 5px;
+}
