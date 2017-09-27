@@ -90,7 +90,11 @@
 
 		<!-- 微服务模块 -->
 		<module>bigger-fish-reg</module>
+
+		<!-- 路由模块 -->
 		<module>bigger-fish-gateway</module>
+
+		<!-- 服务模块 -->
 		<module>bigger-fish-service</module>
 	</modules>
 </project>

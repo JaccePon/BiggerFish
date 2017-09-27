@@ -14,8 +14,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 
-import com.fish.util.FishUtil;
 import com.fish.util.JSONUtil;
+import com.fish.util.StrUtil;
 import com.web.entity.ScoketMsg;
 
 /**
@@ -75,7 +75,7 @@ public class MyWebSocket {
 		try {
 			ScoketMsg msgEntity = JSONUtil.parse(ScoketMsg.class, message);
 			storageMap.put(msgEntity.getFrom(), this);
-			if (FishUtil.isEmpty(msgEntity.getText())) {
+			if (StrUtil.isEmpty(msgEntity.getText())) {
 				return;
 			}
 

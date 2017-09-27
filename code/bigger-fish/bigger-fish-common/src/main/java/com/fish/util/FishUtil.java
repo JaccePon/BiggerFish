@@ -1,10 +1,8 @@
 package com.fish.util;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -21,49 +19,6 @@ import java.util.Set;
  */
 public class FishUtil {
 
-	/**
-	 * 判断字符串是否不为空
-	 *
-	 * @param str
-	 *            字符串
-	 * @return boolean
-	 */
-	public static boolean isNotEmpty(String str) {
-		return isEmpty(str) ? false : true;
-	}
-
-	/**
-	 * 判断字符串是否为空,空则返回true
-	 *
-	 * @param str
-	 *            字符串
-	 * @return boolean
-	 */
-	public static boolean isEmpty(String str) {
-		return null == str || "".equals(str.trim());
-	}
-
-	/**
-	 * 获取当前日期字符串
-	 *
-	 * @return String
-	 */
-	public static String getCurrentTime() {
-		return getFormatDate("yyyy-MM-dd HH:mm:ss");
-	}
-
-	/**
-	 * 日期格式
-	 *
-	 * @param format
-	 *            日期格式字符串,如yyyy-MM-dd HH:mm:ss
-	 * @return String
-	 */
-	public static String getFormatDate(String format) {
-		SimpleDateFormat dateFormat = new SimpleDateFormat(format);
-
-		return dateFormat.format(new Date());
-	}
 
 	/**
 	 * 创建Map
