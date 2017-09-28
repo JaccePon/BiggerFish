@@ -24,10 +24,10 @@
 ## Tech
 ---
 
-> `spring cloud`
-> `spring boot`
-> `mybatis`
-> `react.js`
+>* `spring cloud`
+>* `spring boot`
+>* `mybatis`
+>* `react.js`
 
 ---
 
@@ -35,12 +35,9 @@
 ## Members
 ---
 
-> Leader: `JaccePon`    Email:`411594934@qq.com`
-> Dev:`3306`            Email: `cs12110@163.com`
+    Leader: `JaccePon`    Email:`411594934@qq.com`
+    Dev:`3306`            Email: `cs12110@163.com`
 
 ## Others
 ---
     If you got any problems ,please contact us.
-
-
-
