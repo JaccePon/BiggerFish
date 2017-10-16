@@ -1,4 +1,4 @@
-package com.service.util;
+package com.fish.util;
 
 /**
  * 系统配置类
