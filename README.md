@@ -5,7 +5,7 @@
 	What we want?
 	We want to build a platfrom to blogs,musics,movies  etc. 
 	
-	Welcome to join us, we can build the together.
+	Welcome to join us, we can build that together.
 ---
 
 ## Peoject
